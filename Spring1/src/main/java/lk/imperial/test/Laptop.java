@@ -1,6 +1,6 @@
 package lk.imperial.test;
 
-public class Laptop {
+public class Laptop implements Computer {
 
 
 
@@ -9,9 +9,9 @@ public class Laptop {
     }
 
 
-
-    public void code() {
-        System.out.println("Laptop code");
+    @Override
+    public void compile() {
+        System.out.println("Compiling using laptop");
     }
 
 

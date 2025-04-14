@@ -3,6 +3,7 @@ package lk.imperial.test;
 public class Alien {
 
     private  int age;
+    private Computer com;
 
 
     public Alien(){
@@ -19,8 +20,17 @@ public class Alien {
         this.age = age;
     }
 
+    public Computer getCom() {
+        return com;
+    }
+
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+
     public void code() {
-        System.out.println("Alien code");
+        System.out.println("Coding");
+        com.compile();
     }
 
 }
